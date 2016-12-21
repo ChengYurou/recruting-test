@@ -1,4 +1,3 @@
 #test
 
-easy-calculate.git
-
+readme

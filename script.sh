@@ -1,11 +1,11 @@
-#!/bin/bash
+#! /bin/sh
+file="readme.md"
 
-rm -rf ./easy-calculate
+if [ -f "$file" ]
+then
+	echo "$file 找到."
+else
+	>&2 echo "$file 未找到.请注意文件名大小写!"
+	exit 1
+fi
 
-git clone https://github.com/simpletrain/easy-calculate.git
-
-rm -rf  spec
-
-mv easy-calculate/spec ./
-
-jasmine
